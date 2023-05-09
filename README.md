@@ -24,7 +24,7 @@ In this project, users can register and login. Users have a profile page where t
 
 To install this project, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/flash-cards-quiz-game.git`
+1. Clone the repository: `git clone https://github.com/pprooxyy/Flash-cards-quiz-game`
 2. Install the dependencies: `npm install`
 3. Create a `.env` file and copy the contents from `.env-example`
 4. Create the database and run migrations and seeds using `sequelize-cli: npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all`
