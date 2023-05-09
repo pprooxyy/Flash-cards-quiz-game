@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --container: 112rem;
+  --m-auto: 0 auto;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  height: 100vh;
+  background-color: #395b64;
+}
+
+.container {
+  height: 90vh;
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.swiper.Slider-container {
+  position: relative;
+  width: 240px;
+  height: auto;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.swiper-slide {
+  border-radius: 18px;
+}
+
+.swiper-slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+/* CSS */
+.button-27 {
+  appearance: none;
+  background-color: #000000;
+  border: 2px solid #1a1a1a;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 200px;
+  will-change: transform;
+}
+
+.button-27:disabled {
+  pointer-events: none;
+}
+
+.button-27:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-27:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.button-27.reg {
+  width: 150px;
+  min-height: 10px;
+  height: 30px;
+  text-align: center;
+  line-height: 0px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  height: 70px;
+  background: #2c3333;
+}
+
+.logo {
+  margin-left: 40px;
+  height: 70px;
+  width: 90px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 50px;
+  list-style-type: none;
+}
+
+.navbar li a,
+.navbar li a:visited {
+  text-decoration: none;
+  color: #e7f6f2;
+  font-size: larger;
+}
+
+.register-p a {
+  text-decoration: none;
+  color: #e7f6f2;
+}
+
+.startLink {
+  text-decoration: none;
+  color: white;
+  padding-right: 10px;
+}
+
+.error {
+  visibility: hidden;
+  color: red;
+}
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registaration-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25vw;
+}
+
+.registaration-form-container h1,
+.registaration-form-container p {
+  text-align: center;
+}
+
+.registration-form-wrapper {
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#quizWrap {
+  width: 500px;
+}
+
+.cardQuestion {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  align-items: flex-start;
+  border: 1px solid black;
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  /* position: absolute;
+  left: 100px;
+  top: 100px; */
+}
+
+.question-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.navbar-button {
+  height: 50px;
+  width: 100px;
+  border-radius: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.navbar-button:hover {
+  background-color: #0f6292;
+}
+
+/* CSS for screens with width 768px and below */
+@media only screen and (max-width: 768px) {
+  :root {
+    --container: 100vw;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .button-27.reg {
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .logo {
+    margin: 10px auto;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.statistic-div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.statistic-div ul {
+  margin-bottom: 100px;
+}
+.statistic-div ul li {
+  margin-bottom: 5px;
+  font-size: larger;
+}
+.statistic-div ul li span {
+  font-weight: bold;
+  font-size: larger;
+}
+
+/* CSS for screens with width 1024px and below */
+@media only screen and (max-width: 1024px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .button-27.reg {
+    width: 100%;
+  }
+
+  .navbar li a,
+  .navbar li a:visited {
+    font-size: medium;
+  }
+}
+
+/* CSS for screens with width 1440px and above */
+@media only screen and (min-width: 1440px) {
+  :root {
+    --container: 120rem;
+  }
+
+  .container {
+    padding: 0 4rem;
+  }
+
+  .button-27.reg {
+  }
+
+  .navbar li a,
+  .navbar li a:visited {
+    font-size: larger;
+  }
+}

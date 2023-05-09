@@ -1,0 +1,42 @@
+{
+  "name": "express-default",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js --ext js,jsx --ignore sessions"
+  },
+  "dependencies": {
+    "@babel/core": "^7.17.12",
+    "@babel/preset-env": "^7.17.12",
+    "@babel/preset-react": "^7.17.12",
+    "@babel/register": "^7.17.7",
+    "bcrypt": "^5.1.0",
+    "bootstrap": "^5.3.0-alpha3",
+    "dotenv": "^16.0.3",
+    "express": "^4.17.1",
+    "express-session": "^1.17.3",
+    "http-errors": "^1.8.0",
+    "morgan": "^1.10.0",
+    "pg": "^8.6.0",
+    "pg-hstore": "^2.3.4",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "sequelize": "^6.6.5",
+    "session-file-store": "^1.5.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.37.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "nodemon": "^2.0.7",
+    "postcss": "^8.4.21",
+    "sequelize-cli": "^6.2.0",
+    "tailwindcss": "^3.3.1"
+  }
+}

@@ -1,0 +1,96 @@
+.swiper {
+  width: 60%;
+  height: 60%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://img.freepik.com/free-vector/white-question-mark-background-minimal-style_1017-25235.jpg?w=2000');
+  background-size: cover;
+}
+
+.quiz-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.quiz-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-title {
+  width: 70%;
+  margin-bottom: 50px;
+}
+.form-container {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 50px;
+  justify-content: space-between;
+}
+
+.form-check {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-check-label {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.submit-quiz {
+  align-items: center;
+  appearance: button;
+  background-color: #0276ff;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: 'RM Neue', sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  padding: 10px 21px;
+  text-align: center;
+  text-transform: none;
+  transition: color 0.13s ease-in-out, background 0.13s ease-in-out,
+    opacity 0.13s ease-in-out, box-shadow 0.13s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.submit-quiz:active {
+  background-color: #006ae8;
+}
+
+.submit-quiz:hover {
+  background-color: #1c84ff;
+}
+
+input[type='radio'] {
+  transform: scale(2);
+  margin-right: 10px; /* optional - adds spacing between the label and the radio button */
+}
+
+.span-input {
+  font-size: larger;
+}
